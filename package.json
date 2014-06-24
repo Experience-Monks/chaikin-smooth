@@ -1,0 +1,30 @@
+{
+  "name": "chaikin-smooth",
+  "version": "0.0.0",
+  "description": "chaikin's smoothing algorithm for 2D lines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jam3/chaikin-smooth.git"
+  },
+  "keywords": [
+    "chaikin",
+    "smooth",
+    "polyline",
+    "2d",
+    "polygon",
+    "smoothing",
+    "points",
+    "line",
+    "path"
+  ],
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jam3/chaikin-smooth/issues"
+  },
+  "homepage": "https://github.com/Jam3/chaikin-smooth"
+}
