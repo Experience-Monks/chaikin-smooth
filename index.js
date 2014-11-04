@@ -1,5 +1,5 @@
 module.exports = function(input, output) {
-    if (typeof output === "undefined") 
+    if (output === null || typeof output === "undefined") 
         output = [];
 
     output.length = 0;
