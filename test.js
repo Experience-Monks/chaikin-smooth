@@ -1,5 +1,6 @@
 var smooth = require('./')
 var test = require('tape').test
+var deepcopy = require('deepcopy')
 
 var paths = [
     [
@@ -56,5 +57,16 @@ test("Chaikin's smoothing algorithm on 2d points", function(t) {
     t.equal(output, polyline, 'should reuse array')
     t.notEqual(smooth(input).length, output.length, 'should create new empty array')
     t.deepEqual(polyline, result, 'pushes smoothed input onto reusable array')
+
+
+    var input1 = [[10, 25], [50, 12]]
+    var copied = deepcopy(input1)
+    var result1 = smooth(input1)
+
+    result1.forEach(function(r) { //edit result
+        r[0] *= 2
+        r[1] *= 2
+    })
+    t.deepEqual(input1, copied, 'should produce new point arrays')
     t.end()
 })

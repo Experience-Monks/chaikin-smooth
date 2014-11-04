@@ -33,5 +33,11 @@
   "bugs": {
     "url": "https://github.com/Jam3/chaikin-smooth/issues"
   },
-  "homepage": "https://github.com/Jam3/chaikin-smooth"
+  "homepage": "https://github.com/Jam3/chaikin-smooth",
+  "devDependencies": {
+    "deepcopy": "^0.3.3"
+  },
+  "dependencies": {
+    "vec2-copy": "^1.0.0"
+  }
 }

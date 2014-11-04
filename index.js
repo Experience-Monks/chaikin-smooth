@@ -1,9 +1,11 @@
+var copy = require('vec2-copy')
+
 module.exports = function(input, output) {
     if (!Array.isArray(output))
         output = []
 
     if (input.length>0)
-        output.push(input[0])
+        output.push(copy([0,0], input[0]))
     for (var i=0; i<input.length-1; i++) {
         var p0 = input[i]
         var p1 = input[i+1]
@@ -18,6 +20,6 @@ module.exports = function(input, output) {
         output.push(R)
     }
     if (input.length > 1)
-        output.push(input[ input.length-1 ])
+        output.push(copy([0, 0], input[ input.length-1 ]))
     return output
 }
