@@ -12,6 +12,17 @@ var path = [ [0, 0], [25, 25], [13, 13] ]
 var smoothedPath = smooth(path)
 ```
 
+The result will be:
+
+```js
+[ [ 0, 0 ],
+  [ 6.25, 6.25 ],
+  [ 18.75, 18.75 ],
+  [ 22, 22 ],
+  [ 16, 16 ],
+  [ 13, 13 ] ]
+```
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/chaikin-smooth.png)](https://nodei.co/npm/chaikin-smooth/)
