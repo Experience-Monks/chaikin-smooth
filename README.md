@@ -33,6 +33,12 @@ Performs the smoothing algorithm on the specified path, returning a list populat
 
 If `output` is provided, it will push the points onto the specified path instead of creating a new one. This is useful to build a smooth polyline out of several inputs, or to re-use arrays to avoid GC thrashing. If reusing, you should clear the path first to zero-length. 
 
+**Note:** This uses a strict array test, so it is safe to use `map` and other array functions on it:
+
+```js
+var smoothedPaths = paths.map(smooth)
+```
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/chaikin-smooth/blob/master/LICENSE.md) for details.
