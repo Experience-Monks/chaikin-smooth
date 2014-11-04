@@ -1,12 +1,27 @@
-chaikin-smooth
-==============
+# chaikin-smooth
 
-[![unstable](http://hughsk.github.io/stability-badges/dist/unstable.svg)](http://github.com/hughsk/stability-badges)
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Chaikin's smoothing algorithm for 2D polylines
+
+[Chaikin's smoothing algorithm](http://www.idav.ucdavis.edu/education/CAGDNotes/Chaikins-Algorithm/Chaikins-Algorithm.html) for 2D polylines.
 
 ```js
-var smooth = require('chaikin-smooth');
+var smooth = require('chaikin-smooth')
 
-var smoothedPath = smooth([ [0, 0], [25, 25], [13, 13] ]);
+var path = [ [0, 0], [25, 25], [13, 13] ]
+var smoothedPath = smooth(path)
 ```
+
+## Usage
+
+[![NPM](https://nodei.co/npm/chaikin-smooth.png)](https://nodei.co/npm/chaikin-smooth/)
+
+#### `smooth(path[, output])`
+
+Performs the smoothing algorithm on the specified path, returning a list populated with the additional smoothed points. If the input path has a length of <= 2, the result will be a new array with the same points as the input.
+
+If `output` is provided, it will push the points onto the specified path instead of creating a new one. This is useful to build a smooth polyline out of several inputs, or to re-use arrays to avoid GC thrashing. If reusing, you should clear the path first to zero-length. 
+
+## License
+
+MIT, see [LICENSE.md](http://github.com/mattdesl/chaikin-smooth/blob/master/LICENSE.md) for details.

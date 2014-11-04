@@ -4,7 +4,7 @@
   "description": "chaikin's smoothing algorithm for 2D lines",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,13 @@
     "2d",
     "polygon",
     "smoothing",
+    "chaikin's",
+    "smoother",
+    "algorithm",
+    "svg",
+    "shape",
+    "round",
+    "subdivide",
     "points",
     "line",
     "path"
