@@ -5,7 +5,7 @@ module.exports = function(input, output) {
         output = []
 
     if (input.length>0)
-        output.push(copy([0,0], input[0]))
+        output.push(copy([0, 0], input[0]))
     for (var i=0; i<input.length-1; i++) {
         var p0 = input[i]
         var p1 = input[i+1]
