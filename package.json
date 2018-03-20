@@ -35,7 +35,8 @@
   },
   "homepage": "https://github.com/Jam3/chaikin-smooth",
   "devDependencies": {
-    "deepcopy": "^0.3.3"
+    "deepcopy": "^0.3.3",
+    "tape": "^4.9.0"
   },
   "dependencies": {
     "vec2-copy": "^1.0.0"
